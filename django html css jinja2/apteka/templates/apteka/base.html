@@ -1,0 +1,67 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'apteka/css/main.css' %}">
+{% block title %}{% endblock %}
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <nav>
+                <ul class="nav">
+                    <li><a href="/">Головна сторінка</a></li>
+                    <li><a href="/about">Про компанію</a></li>
+                    <li><a href="/products">Товари</a></li>
+                    <li><a href="/contact">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="bg-white">
+            <div class="header">
+                <div class="wrapper">
+                    <div class="header-top">
+                        <div class="logo"><img class="logo-image" src="{% static 'apteka/images/logo.png' %}"><span>Будь Здоровий! | Аптека</span></div>
+                        <div class="header-info">
+                            <span>(044) 335-54-12</span>
+                            <button type="button">Зворотній зв'язок</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+{% block body %}{% endblock %}
+
+    <footer>
+        <div class="bg-white">
+            <div class="wrapper">
+                <div class="footer-top">
+                    <div class="footer-top-item">
+                        <ul class="social">
+                            <li class="social-item"><a class="social-link social-fb" href="" target="_blank"></a></li>
+                            <li class="social-item"><a class="social-link social-instagram" href="" target="_blank"></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-info">
+                        <span>Адреса: м. Київ, проспект Миколи Бажана, 26 </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="footer-bottom">
+                <p>Найкраща аптека (с) 2021 "Будь здоровий!" - агрегатор аптек, медичних препаратів, товарів для гігієни, здоров'я та краси.</p>
+                <a href="#">Політика конфіденційності</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
